@@ -6,7 +6,7 @@ Ini adalah API sederhana untuk manajemen pengguna yang dibuat dengan AdonisJS.
 
 1.  **Clone repositori:**
     ```bash
-    git clone <URL_REPOSITORI>
+    git clone https://github.com/N4J1B/userAPI.git
     cd userAPI
     ```
 
@@ -48,16 +48,6 @@ Ini adalah API sederhana untuk manajemen pengguna yang dibuat dengan AdonisJS.
     npm run start
     ```
 
-## Skrip yang Tersedia
-
--   `npm run dev`: Menjalankan server pengembangan.
--   `npm run start`: Menjalankan server produksi (setelah build).
--   `npm run build`: Mem-build aplikasi untuk produksi.
--   `npm run test`: Menjalankan tes.
--   `npm run lint`: Melakukan linting pada kode.
--   `npm run format`: Memformat kode menggunakan Prettier.
--   `npm run typecheck`: Melakukan pengecekan tipe dengan TypeScript.
-
 ## Environtment Variabel
 
 Pastikan Anda mengatur variabel berikut di file `.env` Anda:
@@ -78,6 +68,9 @@ DB_DATABASE=app
 
 ## Dokumentasi API
 
+live endpoint : https://api.ainuns.my.id/userapi
+more documentation : https://documenter.getpostman.com/view/46983556/2sB3BALXfS
+
 Endpoint API berikut tersedia:
 
 -   **`GET /users`**
@@ -91,9 +84,10 @@ Endpoint API berikut tersedia:
     -   **Body Request:**
         ```json
         {
-          "fullName": "Nama Lengkap",
+          "nama": "Nama Lengkap",
           "email": "email@contoh.com",
-          "password": "passwordrahasia"
+          "nomorTelepon" : "081923789120",
+          "departemen" : "IT"
         }
         ```
 
@@ -102,7 +96,7 @@ Endpoint API berikut tersedia:
     -   **Body Request:** (Sertakan field yang ingin diubah)
         ```json
         {
-          "fullName": "Nama Baru",
+          "nama": "Nama Baru",
           "email": "emailbaru@contoh.com"
         }
         ```
